@@ -21,7 +21,7 @@ body {
 
 header {
   background-color: var(--mid-blue);
-  padding: 1%;
+  padding: 2%;
   color: var(--white);
   text-decoration: none;
 }
@@ -34,9 +34,16 @@ footer {
   background-color: var(--dark-blue);
 }
 
-nav a {
+header a:hover {
+  color: var(--dark-blue);
+}
+
+header a {
   color: var(--white);
   margin: 5%;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
 }
 
 .title-flex {
@@ -56,11 +63,19 @@ nav a {
 .nav-flex {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+  width: 20%;
+}
+
+.nav-flex a {
+  font-size: 18pt;
 }
 
 .logo {
   font-size: 52pt;
-  margin: 5%;
+}
+
+header h1:hover {
+  color: white;
 }
