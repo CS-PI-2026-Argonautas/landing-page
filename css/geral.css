@@ -4,6 +4,18 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    left: 80%;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;    
+}
 .nav_color {
     background-color: #315f9f;
     padding: 3%;
@@ -13,17 +25,4 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-nav a {
-    left: 8%;
-    position: relative;
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;    
 }
