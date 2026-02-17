@@ -1,0 +1,29 @@
+body {
+  background-color: #739fc6;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.nav_color {
+    background-color: #315f9f;
+    padding: 3%;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    left: 8%;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;    
+}
