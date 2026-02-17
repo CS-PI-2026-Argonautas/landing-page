@@ -1,0 +1,106 @@
+@import url("style.css");
+@import url("grid.css");
+
+.header-flex{
+    background-color: var(--dark-blue);
+}
+
+.detalhe_superior {
+    position: absolute;
+    top: 12%; 
+    left: 2rem;
+    height: 10rem;
+}
+
+.detalhe_inferior {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    height: 10rem;
+}
+
+.title-flex { 
+  gap: 10px;           
+}
+
+.nav-flex {
+  text-transform: uppercase;        
+}
+
+.nav-flex a {
+      font-weight: lighter; 
+}
+
+
+.logo {
+  font-size: 3rem;  
+  line-height: 1;     
+  transform: rotate(-10deg);
+}
+
+.logo{
+    font-family: 'Prosto', sans-serif;
+}
+
+
+.elementos {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  gap: 50px;           
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+#imagem {
+  width: 250px;       
+  height: auto;
+  border-radius: 20px; 
+  object-fit: cover;
+}
+
+#conteudo {
+  max-width: 500px;   
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;     
+  line-height: 1.4;
+}
+
+main {
+    background-color: var(--mid-blue);
+  grid-area: main;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     
+  justify-content: flex-start; 
+  padding: 60px 20px;
+  position: relative; 
+}
+
+#titulo {
+  color: var(--white); 
+  font-family: "Fugaz One", sans-serif;
+  font-size: 5rem; 
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 8px; 
+}
+
+
+main > img:first-child { 
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 12rem;
+}
+
+.elementos img:last-child {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 12rem;
+}
