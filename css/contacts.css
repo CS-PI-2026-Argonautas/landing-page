@@ -22,7 +22,7 @@
 #conteudo {
   max-width: 500px;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   line-height: 1.4;
 }
@@ -41,7 +41,7 @@ main {
 
 #titulo {
   color: var(--white);
-  font-family: "Fugaz One", sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 5rem;
   text-transform: uppercase;
   margin-bottom: 40px;
