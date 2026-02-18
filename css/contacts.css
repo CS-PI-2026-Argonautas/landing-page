@@ -48,16 +48,3 @@ main {
   letter-spacing: 8px;
 }
 
-main > img:first-child {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 12rem;
-}
-
-.elementos img:last-child {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  height: 12rem;
-}

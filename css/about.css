@@ -1,6 +1,13 @@
 @import url("style.css");
 @import url("grid.css");
 
+main {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
 .header_titulo {
   display: flex;
 }

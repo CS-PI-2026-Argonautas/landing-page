@@ -35,7 +35,6 @@ html,
 body {
   margin: 0;
   height: 100%;
-
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -86,7 +85,7 @@ header a {
 
 .detalhe_superior {
   position: absolute;
-  top: 12%;
+  top: 2rem;
   left: 2rem;
   height: 10rem;
 }
