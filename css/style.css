@@ -46,7 +46,7 @@ header {
 }
 
 main {
-  background-color: var(--off-white);
+  background-color: var(--mid-blue);
 }
 
 footer {
@@ -132,4 +132,3 @@ header a {
 header h1:hover {
   color: white;
 }
-
