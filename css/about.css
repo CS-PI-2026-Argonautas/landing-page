@@ -1,0 +1,50 @@
+.detalhe_superior {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  height: 15rem;
+}
+.detalhe_inferior {
+  position: absolute;
+  margin-top: 18rem;
+  bottom: 1rem;
+  margin-left: 102rem;
+  height: 15rem;
+}
+.header_titulo {
+  display: flex;
+}
+.titulo_estilizacao {
+  color: white;
+  font-family: "Fugaz One", serif;
+  font-size: 5rem;
+  margin-left: 35rem;
+  margin-bottom: 0;
+}
+.titulo2_estilizacao {
+  margin-top: 0;
+  color: white;
+  font-family: "Fugaz One", serif;
+  font-size: 5rem;
+  margin-left: 40rem;
+}
+.informacoes {
+  max-width: 40rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  margin-left: 20rem;
+  margin-top: 0.2rem;
+}
+
+.imagem_equipe {
+  position: flex;
+  width: 400px;
+  height: 350px;
+  border-radius: 8px;
+}
+
+.header_informacao {
+  display: flex;
+  gap: 5rem;
+}
