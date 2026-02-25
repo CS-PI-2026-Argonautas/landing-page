@@ -7,30 +7,30 @@ assignees: ''
 
 ---
 
-### Objetivo:
+## Objetivo:
 
 
-### Descrição:
+## Descrição:
 **COMO** 
- **QUERO**
+**QUERO**
 **PARA** 
 
-### Histórias de Usuário:
+## Histórias de Usuário:
 - [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
 
-### Critérios de Aceitação:
+## Critérios de Aceitação:
 - [ ] 
 - [ ] 
 - [ ] 
 
-### Métricas de Sucesso:
+## Métricas de Sucesso:
 
 
-### Riscos:
+## Riscos:
 
 
-### Plano de Mitigação:
+## Plano de Mitigação:
