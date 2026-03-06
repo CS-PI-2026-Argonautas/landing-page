@@ -1,6 +1,40 @@
 @import url("style.css");
 @import url("grid.css");
 
+/* minha implementação abaixo */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Figtree", sans-serif;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  color: #ffffff;
+  background-color: #1c2736;
+}
+
+.navbarLogo{
+  display: flex;
+  padding: 10px;
+}
+
+.navbarLinks{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  padding: 10px;
+  column-gap: 10px;
+}
+
+
 /* main {
   position: relative; 
   display: flex;
