@@ -1,7 +1,7 @@
 @import url("style.css");
 @import url("grid.css");
 
-main {
+/* main {
   position: relative; 
   display: flex;
   flex-direction: column;
@@ -45,4 +45,4 @@ main {
 .header_informacao {
   display: flex;
   gap: 5rem;
-}
+} */
