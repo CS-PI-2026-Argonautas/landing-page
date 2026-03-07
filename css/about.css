@@ -34,6 +34,12 @@ body{
   column-gap: 10px;
 }
 
+.footbar{
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #1c2736;
+}
 
 /* @import url("style.css");
 @import url("grid.css");
