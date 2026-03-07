@@ -31,6 +31,15 @@ body{
   color: aliceblue;
   font-weight: 800;
 }
+.preco{
+    font-size: 1.5rem;     
+}
+.linha {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #8ecddd, transparent);
+  margin: 15px 0;
+}
 .titulo {
   color: white;
   font-size: 2rem;        
@@ -60,8 +69,8 @@ body{
      font-weight: 700;
 }
 .btn-plano{
-    background:#8dafdc;
-    border: 1px solid #8dafdc;
+    background:#8ECDDD;
+    border: 1px solid #8ECDDD;
     color: #2e4057;
     border-radius: 15px;
     width: 180px;
