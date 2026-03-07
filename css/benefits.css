@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Fugaz+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prosto+One&family=Russo+One&display=swap');
+
+:root {
+    --cor-texto: #ffffff;
+
+  --fonte-logo: 'Figtree', sans-serif;
+}
+
 body{
     background-color: #082041;
 }
@@ -21,14 +29,15 @@ body{
   justify-content: space-between;
   background: linear-gradient(to right, #242F3D, #0F3260);
   color: aliceblue;
+  font-weight: 800;
 }
 .titulo {
   color: white;
   font-size: 2rem;        
-  font-weight: bold;
   letter-spacing: 2px;    
   text-transform: uppercase; 
-  font-family: 'Inter', sans-serif; 
+  font-weight: 700;
+  
 }
 .secao {
   display: flex;
@@ -38,5 +47,24 @@ body{
   gap: 50px;
   min-height: 100vh;
   background-color: #051224;
+  font-family: var(--fonte-logo);
 }
 
+.btn-continue{
+     background:#242F3D;
+     border: 1px solid #ffffff;
+     color: #ffffff;
+     border-radius: 15px;
+     width: 180px;
+     min-height: 30px;
+     font-weight: 700;
+}
+.btn-plano{
+    background:#8dafdc;
+    border: 1px solid #8dafdc;
+    color: #2e4057;
+    border-radius: 15px;
+    width: 180px;
+    min-height: 30px;
+    font-weight: 700;
+}
