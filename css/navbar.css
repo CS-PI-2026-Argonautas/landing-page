@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Fugaz+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prosto+One&family=Russo+One&display=swap');
+
+:root {
+  --fonte-logo: 'Figtree', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a{
+color: #ffffff;
+font-family: var(--fonte-logo);
+text-decoration: none;
+
+
+}
+
+.logo {
+    margin-left: 15%;
+    margin-top: 1%;
+    font-family: var(--fonte-logo);
+    font-size: 50px; 
+    line-height: normal;
+    color: #ffffff;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  background-color: #1c2736;
+}
+
+.topbarLogo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: auto;
+}
+
+.topbarLinks {
+font-size: 25px;
+font-weight: 600;
+margin-right: 10%;
+display: flex;
+column-gap: 10%;
+margin-bottom: 2%;
+   
+}
+
