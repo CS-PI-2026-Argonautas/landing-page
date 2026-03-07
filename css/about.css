@@ -12,28 +12,6 @@ body{
   /* font-family: 'Dela Gothic One',sans-serif; */
 }
 
-.topbar{
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  background-color: #1c2736;
-}
-
-.topbarLogo{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin-right: auto;
-}
-
-.topbarLinks{
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  padding: 10px;
-  column-gap: 10px;
-}
-
 
 /* @import url("style.css");
 @import url("grid.css");
