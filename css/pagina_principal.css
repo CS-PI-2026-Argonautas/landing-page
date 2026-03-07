@@ -1,5 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
-:root{
-  --fonte-texto-meio: 'Dela Gothic One', cursive;
-}
+  :root{
+    --fonte-texto-meio: 'Dela Gothic One', cursive;
+    --gradiente-azul: linear-gradient(90deg, #132947 0%, #4084E2 100%);
+  }
+
+  .linha-um, .linha-dois {
+    font-family: var(--fonte-texto-meio); 
+    font-size: 4rem;                  
+    background: var(--gradiente-azul);  
+    background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    width: max-content;
+  }
+  .linha-um{
+  
+    margin-bottom: 0%;
+    margin-top: 20%;
+    margin-left: 8%;
+  }
+  .linha-dois{
+    margin-top: 0%;
+    margin-left: 8%;
+    font-size: 6rem;
+  
+  }
+
+  .hero-container {
+      display: flex;          
+      gap: 50px;            
+      padding: 50px;  
+  }
+
+  .img-hero {
+      max-width: 400px;      
+      height: 45rem;
+      margin-left: 10%;
+  }

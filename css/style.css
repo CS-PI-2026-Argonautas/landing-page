@@ -39,15 +39,12 @@ body {
 }
 
 header {
-  background-color: var(--mid-blue);
+  
   padding: 2%;
   color: var(--white);
   text-decoration: none;
 }
 
-main {
-  background-color: var(--mid-blue);
-}
 
 footer {
   background-color: var(--dark-blue);
