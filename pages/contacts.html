@@ -6,8 +6,9 @@
     <title>Equipe Argonautas</title>
     
     <link rel="stylesheet" href="../css/contacts.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
   
   </head>
 
@@ -28,28 +29,82 @@
   <body>
      <main>
       <div id="info">
-        <h1>SEJA NOSSO PRÓXIMO CLIENTE</h1>
+        <div id="titulo">
+          <h1>SEJA NOSSO PRÓXIMO CLIENTE</h1>
+        </div>
+        <div id="contato">      
         <p>exemplo@mail.com</p>
         <p>(99) 99999-9999</p>
+
+        <div id="redes-sociais">
+           <img src="/assets/linkedin.svg" alt="">
+          <img src="/assets/instagram.svg" alt="">
+          <img src="/assets/github.svg" alt="">
+        </div>
+        </div> 
+        
+       
       </div>
       <div>
-        <form action="">
-          <label for="nome">Nome:</label>
-          <input type="text">
+        <form class="contato-form">
+  <div class="row">
+    <div class="field">
+      <label>Nome</label>
+      <input type="text">
+    </div>
+    <div class="field">
+      <label>Sobrenome</label>
+      <input type="text">
+    </div>
+  </div>
 
-          <label for="sobrenome">Sobrenome:</label>
-          <input type="text">
-          
-          <label for="email">Email:</label>
-          <input type="email">
+  <div class="field">
+    <label>Seu melhor email</label>
+    <input type="email">
+  </div>
 
-          <label for="mensagem">Mensagem:</label>
-          <input type="textarea">
-
-        </form>
+  <div class="field">
+    <label>Mensagem</label>
+    <textarea rows="6"></textarea>
+  </div>
+</form>
       </div>
      </main>
+
+     <footer>
+        
+  
+      <div id="conteudo">
+
+        <div class="secao">
+          <h1>ORGANIZAÇÃO</h1>
+          <div class="links">
+          <p>Home</p>
+          <p>Sobre</p>
+          <p>Contato</p>
+          <p>Preços</p>
+          </div>
+        </div>
+
+        <div class="secao">
+          <h1>REDES SOCIAIS</h1>
+          <div class="links">
+            <p>Instagram</p>
+            <p>Github</p>
+            <p>Email</p>
+          </div>
+        </div>
+
+      <div class="secao">
+        <p>© 2026 Argonautas</p>
+      </div>
+
+      </div>
+      
+
+    </footer>
     
   </body>
+
 
 </html>
