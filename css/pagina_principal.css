@@ -3,38 +3,83 @@
   :root{
     --fonte-texto-meio: 'Dela Gothic One', cursive;
     --gradiente-azul: linear-gradient(90deg, #132947 0%, #4084E2 100%);
+    --azul-escuro: #1C2736;;
+    --azul-claro: #4084E2;
   }
 
   .linha-um, .linha-dois {
     font-family: var(--fonte-texto-meio); 
-    font-size: 4rem;                  
+    font-size: 5rem;                  
     background: var(--gradiente-azul);  
     background-clip: text;
     color: transparent;
     white-space: nowrap;
     width: max-content;
+    
   }
   .linha-um{
-  
-    margin-bottom: 0%;
-    margin-top: 20%;
+    margin-top: 2rem;
     margin-left: 8%;
   }
   .linha-dois{
-    margin-top: 0%;
     margin-left: 8%;
-    font-size: 6rem;
+  }
+
+.hero-container {
+    display: flex;
+    align-items: center;     
+    justify-content: space-between; 
+    padding: 50px 8%;       
+    min-height: 80vh;      
+}
+
+.img-hero {
+    height:60rem;             
+    margin-top: 5rem;
+    width:29rem;             
+           
+}
+
+  .botoes-container {
+  display: flex;
+  margin-left: 5rem;
+  margin-top: 5rem; 
+  gap: 1.5rem;
+  align-items: center; 
+}
+
+  .solicitar-botao, .saiba-mais-botao {
+  margin: 0; 
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-family: var(--fonte-texto-meio); 
+  border-radius: 4rem;
+  font-size: 1.5rem;
+
+  }
+  .solicitar-botao{
+    width: 40rem;
+    background:var(--gradiente-azul);
+    color: white;
+  }
+
+  .saiba-mais-botao{
+   
+    background:white;
+    color: var(--azul-escuro);
+    border: 0.1rem solid var(--azul-escuro);
+   
+  }
+
+  .saiba-mais-botao:hover {
+  background: var(--azul-escuro);
+  color: white;
+  border-color: transparent; 
+} 
+
+ .solicitar-botao:hover {
+  background: var(--azul-escuro);
+  color: white
   
-  }
-
-  .hero-container {
-      display: flex;          
-      gap: 50px;            
-      padding: 50px;  
-  }
-
-  .img-hero {
-      max-width: 400px;      
-      height: 45rem;
-      margin-left: 10%;
-  }
+} 
