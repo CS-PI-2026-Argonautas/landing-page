@@ -8,10 +8,22 @@
 
 body{
   font-family: 'Figtree', sans-serif;
-  /* font-family: 'Dela Gothic One',sans-serif; */
 }
 
+.team-header h1{
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  width: fit-content;
+  background: linear-gradient(90deg, #132947, #4084E2);
+  background-clip: text;
+  color: transparent;
+  margin-right: auto;
+}
 
+.team-header p{
+  color: #3A4A5C;
+}
 
 /* ================ */
 
