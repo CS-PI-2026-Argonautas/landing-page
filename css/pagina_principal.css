@@ -1,75 +1,86 @@
   @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
   :root{
     --fonte-texto-meio: 'Dela Gothic One', cursive;
+    --figtree: 'Figtree', sans-serif;
     --gradiente-azul: linear-gradient(90deg, #132947 0%, #4084E2 100%);
     --azul-escuro: #1C2736;;
     --azul-claro: #4084E2;
   }
 
   .linha-um, .linha-dois {
-    font-family: var(--fonte-texto-meio); 
-    font-size: 5rem;                  
-    background: var(--gradiente-azul);  
+    
+    background: var(--gradiente-azul);
     background-clip: text;
     color: transparent;
     white-space: nowrap;
     width: max-content;
+    margin-left: 8%;
+    
     
   }
-  .linha-um{
-    margin-top: 2rem;
-    margin-left: 8%;
-  }
-  .linha-dois{
-    margin-left: 8%;
-  }
+.linha-um {
+  margin-top: 20%;
+  font-family: var(--figtree);
+  font-size: 4.5vw;
+  transform: scaleY(0.8) scaleX(1.1);
+  transform-origin: left;
+  margin-bottom: -5px;
+  font-weight: 1000;
+  transform: scaleX(1);
+  
+}
+
+.linha-dois {
+  font-family: var(--fonte-texto-meio);
+  font-size: 6vw;
+  line-height:1;
+  transform: scaleX(0.9);
+  margin-left: 10%;
+  
+}
 
 .hero-container {
     display: flex;
-    align-items: center;     
-    justify-content: space-between; 
-    padding: 50px 8%;       
-    min-height: 80vh;      
+    align-items: center;
 }
 
 .img-hero {
-    height:60rem;             
-    margin-top: 5rem;
-    width:29rem;             
-           
+    height:35vw;
+    margin-top: 8vw;
+    width:17vw;
+    margin-left: 10%;
 }
 
   .botoes-container {
   display: flex;
-  margin-left: 5rem;
-  margin-top: 5rem; 
-  gap: 1.5rem;
-  align-items: center; 
+  margin-left:15%;
+  margin-top: 5%;
+  gap: 1.5vw;
+
 }
 
   .solicitar-botao, .saiba-mais-botao {
-  margin: 0; 
-  padding: 1rem 2rem;
+  
+  padding: 1vw 2vw;
   border: none;
-  cursor: pointer;
   font-family: var(--fonte-texto-meio); 
-  border-radius: 4rem;
-  font-size: 1.5rem;
-
+  border-radius: 4vw;
+  font-size: 1.3vw;
+  
   }
   .solicitar-botao{
-    width: 40rem;
+    width: 30vw;
     background:var(--gradiente-azul);
     color: white;
   }
 
   .saiba-mais-botao{
-   
     background:white;
     color: var(--azul-escuro);
     border: 0.1rem solid var(--azul-escuro);
-   
+    width: 15vw;
   }
 
   .saiba-mais-botao:hover {
