@@ -1,12 +1,16 @@
   @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+  body {
+    background-color: #F8F8F8;
+  }
   :root{
     --fonte-texto-meio: 'Dela Gothic One', cursive;
     --figtree: 'Figtree', sans-serif;
     --gradiente-azul: linear-gradient(90deg, #132947 0%, #4084E2 100%);
     --azul-escuro: #1C2736;;
     --azul-claro: #4084E2;
+    --cor-letra: #3A4A5C;
   }
 
   .linha-um, .linha-dois {
@@ -21,7 +25,7 @@
     
   }
 .linha-um {
-  margin-top: 20%;
+  margin-top: 10%;
   font-family: var(--figtree);
   font-size: 4.5vw;
   transform: scaleY(0.8) scaleX(1.1);
@@ -68,7 +72,7 @@
   font-family: var(--fonte-texto-meio); 
   border-radius: 4vw;
   font-size: 1.3vw;
-  
+
   }
   .solicitar-botao{
     width: 30vw;
@@ -94,3 +98,71 @@
   color: white
   
 } 
+
+/* SEGUNDA SESSAO */
+
+.legenda {
+  color: var(--azul-claro);
+  font-family: var(--figtree);
+  margin-left: 2.5%;
+  font-weight: 500;
+  font-size: 0.9vw;
+  margin-top: 5%;
+  margin-bottom: 1%;
+
+}
+
+.titulo-proposito {
+  display: flex;
+  flex-direction: column; 
+  margin-left: 2.5%; 
+}
+
+.linha-um-proposito {
+  color: var(--azul-escuro);
+  font-family: var(--fonte-texto-meio);
+  font-size: 2.8vw;
+  margin-bottom: 0%;
+  line-height: 1;
+}
+
+.linha-dois-proposito {
+  background: var(--gradiente-azul);
+  background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+  font-family: var(--fonte-texto-meio);
+  font-size: 5vw;
+  line-height: 1; 
+  
+}
+
+.informacao {
+color: var(--cor-letra);
+font-family: var(--figtree);
+font-size: 1.2vw;
+margin-top: 3%;
+margin-left: 2%;
+max-width: 40vw; 
+line-height: 1.5;
+
+}
+
+.blocos {
+  display: flex;
+  width: auto;
+  height: 30vw;
+
+}
+
+.bloco-filho{
+  width: 30vw;
+  height: 25vw;
+  background-color:white;
+  margin-top: 2%;
+  border-radius: 10%;
+  margin-left: 2%;
+ border: 0.1vw solid rgba(28, 39, 54, 0.25);
+
+
+}
