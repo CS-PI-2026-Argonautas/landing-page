@@ -20,6 +20,13 @@ body{
   margin: 15px 30px;
 }
 
+.team h1:hover{
+  /* no style.css estava deixando o conteúdo "NOSSA EQUIPE" na cor branca ao passar o mouse por cima. aqui eu mantenho a mesma cor que já é caso o style.css não seja alterado */
+  background: linear-gradient(90deg, #132947, #4084E2);
+  background-clip: text;
+  color: transparent;
+}
+
 .team-header h1{
   font-family: "Dela Gothic One", sans-serif;
   font-size: 90px;
@@ -69,12 +76,19 @@ body{
 
 .avatar{
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   align-self: center;
   margin: 5px 0;
 }
 
+
+.footbar{
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #1c2736;
+}
 
 
 /* ================ */
@@ -107,12 +121,7 @@ body{
 /* ================== */
 
 
-.footbar{
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  background-color: #1c2736;
-}
+
 
 /* @import url("style.css");
 @import url("grid.css");
