@@ -194,6 +194,8 @@ margin-left:6%;
 
 }
 
+/* TERCEIRA SESSAO */
+
 .plataforma {
 background-color:var(--azul-escuro);
 width: auto;
@@ -271,4 +273,98 @@ flex-direction: column;
   font-size: 1vw; 
   line-height: 1.6; 
   font-weight: 400;
+}
+
+/* QUARTA SESSAO */
+
+.visoes {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 5vw 5vw;
+}
+
+
+.bloco-esquerda {
+  max-width: 80%;
+  
+}
+
+.bloco-direita {
+  max-width: 20%; 
+  margin-left: 25%;
+}
+
+
+.legenda-visao {
+  color: var(--azul-claro);
+  font-family: var(--figtree, sans-serif);
+  font-weight: 700;
+  font-size: 1vw;
+  letter-spacing: 0.1vw; 
+  margin-bottom: 3%;
+}
+
+.legenda-titulo {
+  color: var(--Dark-Blue, #1C2736);
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 3vw;
+  line-height: 1.1; 
+  margin: 0; 
+  max-width: none;
+}
+
+.legenda-direita {
+  color: var(--cor-letra);
+  text-align: right; 
+  font-family: var(--figtree, sans-serif);
+  font-size: 1.1vw;
+  line-height: 1.6;
+ margin-right: 0;
+}
+
+.container-dos-grids {
+  display: flex;
+  gap: 2.5vw;
+  margin-left: 10vw;
+}
+
+.grids {
+  width: 25vw; 
+  height: 25vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1vw; 
+}
+
+.grid-1 {
+  background-image: url('../assets/images/imagem1.png');
+}
+
+.grid-2 {
+  background-image: url('../assets/images/imagem2.svg');
+}
+
+.grid-3 {
+  background-image: url('../assets/images/imagem3.svg'); 
+}
+
+.titulos {
+ font-family: var(--figtree, sans-serif);
+ color: white;
+ margin-top: 65%;
+ margin-left: 3%;
+ font-size: 2vw;
+ font-weight: 700;
+}
+
+.sub-titulos{
+  font-family: var(--figtree, sans-serif);
+  color: white;
+  margin-left: 3%;
+  font-weight: 500;
+  font-size: 1vw;
+  max-width: 20vw;
+  margin-top: 4%;
 }
