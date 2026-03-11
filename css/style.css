@@ -5,8 +5,7 @@
 }
 
 body {
-  font-family: 'Figtree', sans-serif;
-
+  font-family: "Figtree", sans-serif;
 }
 
 .topbar {
@@ -16,7 +15,28 @@ body {
   background-color: #1c2736;
 }
 
-.topbarLogo {
+header {
+  color: var(--white);
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--dark-blue);
+}
+
+header a:hover {
+  color: var(--dark-blue);
+}
+
+header a {
+  color: var(--white);
+  margin: 5%;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+.title-flex {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -29,4 +49,68 @@ body {
   margin-left: auto;
   padding: 10px;
   column-gap: 10px;
+}
+
+.header-flex {
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detalhe_superior {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  height: 10rem;
+}
+
+.detalhe_inferior {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  height: 10rem;
+}
+
+.title-flex {
+  gap: 10px;
+}
+
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.nav-flex a {
+  font-size: 18pt;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.logo {
+  font-size: 52pt;
+}
+
+.logo {
+  font-size: 3rem;
+  line-height: 1;
+  transform: rotate(-10deg);
+}
+
+.logo {
+  font-family: "Prosto", sans-serif;
+}
+
+header h1:hover {
+  color: white;
+}
+
+.iframe-navbar {
+  width: 100%;
+  height: 80px;
+  border: none;
+  display: block;
 }
