@@ -2,13 +2,17 @@
 :root {
     --cor-texto: #ffffff;
 
-  --fonte-logo: 'Figtree', sans-serif;
+    --fonte-logo: 'Figtree', sans-serif;
 }
-
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     background-color: #082041;
+    width: 100%;
 }
-
 .container-planos {
   display: flex;
   flex-direction: row;
