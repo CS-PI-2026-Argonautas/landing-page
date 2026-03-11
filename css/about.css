@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-*{
+*, *::before, *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,16 +9,19 @@
 
 body{
   font-family: 'Figtree', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.team {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 40px auto;
 }
 
 .team-header{
-  padding: 5px 0;
-  margin: 5px 0;
-}
-
-.team{
-  padding: 5px 10px;
-  margin: 15px 30px;
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
 
 .team h1:hover{
@@ -25,25 +29,24 @@ body{
   background: linear-gradient(90deg, #132947, #4084E2);
   background-clip: text;
   color: transparent;
+  -webkit-background-clip: text;
 }
 
 .team-header h1{
   font-family: "Dela Gothic One", sans-serif;
-  font-size: 90px;
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 400;
   width: fit-content;
   background: linear-gradient(90deg, #132947, #4084E2);
   background-clip: text;
   color: transparent;
-  margin-right: auto;
-  padding: 0;
-  align-items: center;
+  -webkit-background-clip: text;
 }
 
 .team-header p{
   color: #3A4A5C;
-  font-size: 25px;
-  width: fit-content;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  max-width: 700px;
   font-weight: 400;
   padding: 5px 0;
   margin: 10px 0;
@@ -95,6 +98,10 @@ body{
     /* grid-template-columns: repeat(1, minmax(250px, 1fr)); */
   /* } */
 /* } */
+
+
+
+
 /* ================ */
 
 
