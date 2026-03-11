@@ -14,7 +14,7 @@ body {
 a {
   color: var(--cor-texto);
   font-family: var(--fonte-logo);
-  text-decoration: none;sei
+  text-decoration: none;
 }
 
 .logo {
