@@ -151,7 +151,7 @@ line-height: 1.5;
 .blocos {
   display: flex;
   width: auto;
-  height: 30vw;
+  height: 25vw;
 
 }
 
@@ -164,5 +164,31 @@ line-height: 1.5;
   margin-left: 2%;
  border: 0.1vw solid rgba(28, 39, 54, 0.25);
 
+
+}
+
+.icon {
+  margin-left: 6%;
+  margin-top: 7%;
+  width: 3vw;
+}
+
+.conteudo{
+font-family: var(--figtree);
+color: black;
+font-size: 1.5vw;
+margin-left: 6%;
+margin-top: 5%;
+font-weight: 800;
+max-width: 20vw; 
+}
+
+.conteudo2{
+font-family: var(--figtree);
+color: var(--cor-letra);
+font-size: 1vw;
+max-width: 25vw; 
+margin-top: 4%;
+margin-left:6%;
 
 }
