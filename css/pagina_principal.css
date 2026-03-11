@@ -1,447 +1,449 @@
-  @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-  body {
-    background-color: #F8F8F8;
-  }
-  :root{
-    --fonte-texto-meio: 'Dela Gothic One', cursive;
-    --figtree: 'Figtree', sans-serif;
-    --gradiente-azul: linear-gradient(90deg, #132947 0%, #4084E2 100%);
-    --azul-escuro: #1C2736;;
-    --azul-claro: #4084E2;
-    --cor-letra: #3A4A5C;
-  }
+    body {
+      background-color: #F8F8F8;
+      margin: 0 !important;
+    padding: 0 !important;
+    }
+    :root{
+      --fonte-texto-meio: 'Dela Gothic One', cursive;
+      --figtree: 'Figtree', sans-serif;
+      --gradiente-azul: linear-gradient(90deg, #132947 0%, #4084E2 100%);
+      --azul-escuro: #1C2736;;
+      --azul-claro: #4084E2;
+      --cor-letra: #3A4A5C;
+    }
 
-  .linha-um, .linha-dois {
     
+    .linha-um, .linha-dois {
+    
+      background: var(--gradiente-azul);
+      background-clip: text;
+      color: transparent;
+      white-space: nowrap;
+      width: max-content;
+      margin-left: 8%;
+      
+      
+    }
+
+  .linha-um {
+    
+    font-family: var(--figtree);
+    font-size: 4.5vw;
+    transform: scaleY(0.8) scaleX(1.1);
+    transform-origin: left;
+    margin-bottom: -5px;
+    font-weight: 1000;
+    transform: scaleX(1);
+    
+  }
+
+  .linha-dois {
+    font-family: var(--fonte-texto-meio);
+    font-size: 6vw;
+    line-height:1;
+    transform: scaleX(0.9);
+    margin-left: 10%;
+    
+  }
+
+  .hero-container {
+      display: flex;
+      align-items: center;
+      margin-top: 5vw;
+  }
+
+  .img-hero {
+      height:35vw;
+      margin-top: 1vw;
+      width:17vw;
+      margin-left: 10%;
+  }
+
+    .botoes-container {
+    display: flex;
+    margin-left:15%;
+    margin-top: 5%;
+    gap: 1.5vw;
+
+  }
+
+    .solicitar-botao, .saiba-mais-botao {
+    
+    padding: 1vw 2vw;
+    border: none;
+    font-family: var(--fonte-texto-meio); 
+    border-radius: 4vw;
+    font-size: 1.3vw;
+
+    }
+    .solicitar-botao{
+      width: 30vw;
+      background:var(--gradiente-azul);
+      color: white;
+    }
+
+    .saiba-mais-botao{
+      background:white;
+      color: var(--azul-escuro);
+      border: 0.1rem solid var(--azul-escuro);
+      width: 15vw;
+    }
+
+    .saiba-mais-botao:hover {
+    background: var(--azul-escuro);
+    color: white;
+    border-color: transparent; 
+  } 
+
+  .solicitar-botao:hover {
+    background: var(--azul-escuro);
+    color: white
+    
+  } 
+
+  /* SEGUNDA SESSAO */
+
+  .legenda {
+    color: var(--azul-claro);
+    font-family: var(--figtree);
+    margin-left: 2.5%;
+    font-weight: 500;
+    font-size: 0.9vw;
+    margin-top: 5%;
+    margin-bottom: 1%;
+
+  }
+
+  .titulo-proposito {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 2.5%; 
+  }
+
+  .linha-um-proposito {
+    color: var(--azul-escuro);
+    font-family: var(--fonte-texto-meio);
+    font-size: 2.8vw;
+    margin-bottom: 0%;
+    line-height: 1;
+  }
+
+  .linha-dois-proposito {
     background: var(--gradiente-azul);
     background-clip: text;
     color: transparent;
     white-space: nowrap;
-    width: max-content;
-    margin-left: 8%;
+    font-family: var(--fonte-texto-meio);
+    font-size: 5vw;
+    line-height: 1; 
     
-    
-  }
-.linha-um {
-  margin-top: 10%;
-  font-family: var(--figtree);
-  font-size: 4.5vw;
-  transform: scaleY(0.8) scaleX(1.1);
-  transform-origin: left;
-  margin-bottom: -5px;
-  font-weight: 1000;
-  transform: scaleX(1);
-  
-}
-
-.linha-dois {
-  font-family: var(--fonte-texto-meio);
-  font-size: 6vw;
-  line-height:1;
-  transform: scaleX(0.9);
-  margin-left: 10%;
-  
-}
-
-.hero-container {
-    display: flex;
-    align-items: center;
-}
-
-.img-hero {
-    height:35vw;
-    margin-top: 1vw;
-    width:17vw;
-    margin-left: 10%;
-}
-
-  .botoes-container {
-  display: flex;
-  margin-left:15%;
-  margin-top: 5%;
-  gap: 1.5vw;
-
-}
-
-  .solicitar-botao, .saiba-mais-botao {
-  
-  padding: 1vw 2vw;
-  border: none;
-  font-family: var(--fonte-texto-meio); 
-  border-radius: 4vw;
-  font-size: 1.3vw;
-
-  }
-  .solicitar-botao{
-    width: 30vw;
-    background:var(--gradiente-azul);
-    color: white;
   }
 
-  .saiba-mais-botao{
-    background:white;
-    color: var(--azul-escuro);
-    border: 0.1rem solid var(--azul-escuro);
-    width: 15vw;
-  }
-
-  .saiba-mais-botao:hover {
-  background: var(--azul-escuro);
-  color: white;
-  border-color: transparent; 
-} 
-
- .solicitar-botao:hover {
-  background: var(--azul-escuro);
-  color: white
-  
-} 
-
-/* SEGUNDA SESSAO */
-
-.legenda {
-  color: var(--azul-claro);
-  font-family: var(--figtree);
-  margin-left: 2.5%;
-  font-weight: 500;
-  font-size: 0.9vw;
-  margin-top: 5%;
-  margin-bottom: 1%;
-
-}
-
-.titulo-proposito {
-  display: flex;
-  flex-direction: column; 
-  margin-left: 2.5%; 
-}
-
-.linha-um-proposito {
-  color: var(--azul-escuro);
-  font-family: var(--fonte-texto-meio);
-  font-size: 2.8vw;
-  margin-bottom: 0%;
-  line-height: 1;
-}
-
-.linha-dois-proposito {
-  background: var(--gradiente-azul);
-  background-clip: text;
-  color: transparent;
-  white-space: nowrap;
-  font-family: var(--fonte-texto-meio);
-  font-size: 5vw;
-  line-height: 1; 
-  
-}
-
-.informacao {
-color: var(--cor-letra);
-font-family: var(--figtree);
-font-size: 1.2vw;
-margin-top: 3%;
-margin-left: 2%;
-max-width: 40vw; 
-line-height: 1.5;
-
-}
-
-.blocos {
-  display: flex;
-  width: auto;
-  height: 25vw;
-  margin-bottom: 10%;
-
-}
-
-.bloco-filho{
-  width: 30vw;
-  height: 25vw;
-  background-color:white;
-  margin-top: 2%;
-  border-radius: 10%;
-  margin-left: 2%;
- border: 0.1vw solid rgba(28, 39, 54, 0.25);
-
-
-}
-
-.icon {
-  margin-left: 6%;
-  margin-top: 7%;
-  width: 3vw;
-}
-
-.conteudo{
-font-family: var(--figtree);
-color: black;
-font-size: 1.5vw;
-margin-left: 6%;
-margin-top: 5%;
-font-weight: 800;
-max-width: 20vw; 
-}
-
-.conteudo2{
-font-family: var(--figtree);
-color: var(--cor-letra);
-font-size: 1vw;
-max-width: 25vw; 
-margin-top: 4%;
-margin-left:6%;
-
-}
-
-/* TERCEIRA SESSAO */
-
-.plataforma {
-background-color:var(--azul-escuro);
-width: auto;
-height: 50vw;
-display: flex;
-flex-direction: column;
-
-}
-
-.legenda-plat{
-
-  display: flex;
-  color: var(--azul-claro);
-  font-family: var(--figtree);
-  margin-left: 2.5%;
-  font-weight: 700;
-  font-size: 0.9vw;
-  margin-top: 5%;
-
-}
-
-.titulo-colorido {
-
-  background: var(--Light-gradient, linear-gradient(90deg, #4084E2 0%, #8ECDDD 100%));
-  background-clip: text;
-  color: transparent;
-  white-space: nowrap;
-   font-family: var(--fonte-texto-meio);
-   font-size: 4vw;
-   margin-left: 2.5%;
- 
-}
-
-.titulo-branco {
-  color: white;
-  font-family: var(--fonte-texto-meio);
-   font-size: 4vw;
-   margin-left: 2.5%;
-
-}
-
-.grid-plataforma {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5vw;
-  margin-top: 3vw;
-  width: 100%;
-  padding-left: 8vw; 
-  padding-right: 8vw;
-}
-
-
-.filho-plat {
-  background: var(--Dark-gradient, linear-gradient(90deg, #242F3D 0%, rgba(15, 50, 96, 0.80) 100%));
-  border-radius: 0.6vw; 
-  border: 1px solid rgba(255, 255, 255, 0.15); 
-  padding: 1.5vw 2.2vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.filho-plat p:first-child {
-  color: #ffffff; 
-  font-size: 1.2vw; 
-  font-weight: 700; 
-  text-decoration: underline; 
-  text-underline-offset: 0.3vw;
-  text-decoration-thickness: 1.5px; 
-  margin-bottom: 1.1vw; 
-}
-
-.filho-plat p:last-child {
-  color: #aab8c9; 
-  font-size: 1vw; 
-  line-height: 1.6; 
-  font-weight: 400;
-}
-
-/* QUARTA SESSAO */
-
-.visoes {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 5vw 5vw;
-}
-
-
-.bloco-esquerda {
-  max-width: 80%;
-  
-}
-
-.bloco-direita {
-  max-width: 20%; 
-  margin-left: 25%;
-}
-
-
-.legenda-visao {
-  color: var(--azul-claro);
-  font-family: var(--figtree, sans-serif);
-  font-weight: 700;
-  font-size: 1vw;
-  letter-spacing: 0.1vw; 
-  margin-bottom: 3%;
-}
-
-.legenda-titulo {
-  color: var(--Dark-Blue, #1C2736);
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 3vw;
-  line-height: 1.1; 
-  margin: 0; 
-  max-width: none;
-}
-
-.legenda-direita {
+  .informacao {
   color: var(--cor-letra);
-  text-align: right; 
-  font-family: var(--figtree, sans-serif);
-  font-size: 1.1vw;
-  line-height: 1.6;
- margin-right: 0;
-}
+  font-family: var(--figtree);
+  font-size: 1.2vw;
+  margin-top: 3%;
+  margin-left: 2%;
+  max-width: 40vw; 
+  line-height: 1.5;
 
-.container-dos-grids {
-  display: flex;
-  gap: 2.5vw;
-  margin-left: 10vw;
-}
+  }
 
-.grids {
-  width: 25vw; 
-  height: 25vw;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 1vw; 
-}
+  .blocos {
+    display: flex;
+    width: auto;
+    height: 25vw;
+    margin-bottom: 10%;
 
-.grid-1 {
-  background-image: url('../assets/images/imagem1.png');
-}
+  }
 
-.grid-2 {
-  background-image: url('../assets/images/imagem2.svg');
-}
-
-.grid-3 {
-  background-image: url('../assets/images/imagem3.svg'); 
-}
-
-.titulos {
- font-family: var(--figtree, sans-serif);
- color: white;
- margin-top: 65%;
- margin-left: 3%;
- font-size: 2vw;
- font-weight: 700;
-}
-
-.sub-titulos{
-  font-family: var(--figtree, sans-serif);
-  color: white;
-  margin-left: 3%;
-  font-weight: 500;
-  font-size: 1vw;
-  max-width: 20vw;
-  margin-top: 4%;
-}
+  .bloco-filho{
+    width: 30vw;
+    height: 25vw;
+    background-color:white;
+    margin-top: 2%;
+    border-radius: 10%;
+    margin-left: 2%;
+  border: 0.1vw solid rgba(28, 39, 54, 0.25);
 
 
-/* QUINTA SESSAO */
+  }
 
+  .icon {
+    margin-left: 6%;
+    margin-top: 7%;
+    width: 3vw;
+  }
 
-.div-proximo-passo {
-  display: flex;
-  background-color: var(--azul-escuro);
+  .conteudo{
+  font-family: var(--figtree);
+  color: black;
+  font-size: 1.5vw;
+  margin-left: 6%;
   margin-top: 5%;
-  width: auto;
-  height: 30vw;
-  flex-direction: column;
-}
+  font-weight: 800;
+  max-width: 20vw; 
+  }
 
-.titulo1 {
-  font-family: var(--fonte-texto-meio);
-  color: white;
-  font-size: 3vw;
-  margin-top: 40%;
-  margin-left: 30vw;
-  max-width: 50vw;
- 
-}
-
-.titulo2 {
- background: var(--Light-gradient, linear-gradient(90deg, #4084E2 0%, #8ECDDD 100%));
- font-family: var(--fonte-texto-meio);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: 3vw;
-margin-left: 35vw;
-}
-
-
-.titulo-linha-unica{
-margin-top: 10%;
-}
-
-.demo {
- border-radius: 4vw;
-background: var(--Gradient-blue, linear-gradient(90deg, #132947 0%, #4084E2 100%));
-color: white  ;
- font-family: var(--figtree);
- font-size: 1vw;
- padding: 1vw 3vw;  
- border: none;
- margin-top: 2vw;
- margin-left: 33vw;
-
-}
-
-.contato {
-  border-radius: 4vw;
+  .conteudo2{
+  font-family: var(--figtree);
+  color: var(--cor-letra);
   font-size: 1vw;
-  padding: 1vw 3vw;
-  margin-top: 2vw;
-  background-color: var(--azul-escuro);
+  max-width: 25vw; 
+  margin-top: 4%;
+  margin-left:6%;
+
+  }
+
+  /* TERCEIRA SESSAO */
+
+  .plataforma {
+  background-color:var(--azul-escuro);
+  width: auto;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+
+  }
+
+  .legenda-plat{
+
+    display: flex;
+    color: var(--azul-claro);
+    font-family: var(--figtree);
+    margin-left: 2.5%;
+    font-weight: 700;
+    font-size: 0.9vw;
+    margin-top: 5%;
+
+  }
+
+  .titulo-colorido {
+
+    background: var(--Light-gradient, linear-gradient(90deg, #4084E2 0%, #8ECDDD 100%));
+    background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    font-family: var(--fonte-texto-meio);
+    font-size: 4vw;
+    margin-left: 2.5%;
+  
+  }
+
+  .titulo-branco {
+    color: white;
+    font-family: var(--fonte-texto-meio);
+    font-size: 4vw;
+    margin-left: 2.5%;
+
+  }
+
+  .grid-plataforma {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5vw;
+    margin-top: 3vw;
+    width: 100%;
+    padding-left: 8vw; 
+    padding-right: 8vw;
+  }
+
+
+  .filho-plat {
+    background: var(--Dark-gradient, linear-gradient(90deg, #242F3D 0%, rgba(15, 50, 96, 0.80) 100%));
+    border-radius: 0.6vw; 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    padding: 1.5vw 2.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .filho-plat p:first-child {
+    color: #ffffff; 
+    font-size: 1.2vw; 
+    font-weight: 700; 
+    text-decoration: underline; 
+    text-underline-offset: 0.3vw;
+    text-decoration-thickness: 1.5px; 
+    margin-bottom: 1.1vw; 
+  }
+
+  .filho-plat p:last-child {
+    color: #aab8c9; 
+    font-size: 1vw; 
+    line-height: 1.6; 
+    font-weight: 400;
+  }
+
+  /* QUARTA SESSAO */
+
+  .visoes {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 5vw 5vw;
+  }
+
+
+  .bloco-esquerda {
+    max-width: 80%;
+    
+  }
+
+  .bloco-direita {
+    max-width: 20%; 
+    margin-left: 25%;
+  }
+
+
+  .legenda-visao {
+    color: var(--azul-claro);
+    font-family: var(--figtree, sans-serif);
+    font-weight: 700;
+    font-size: 1vw;
+    letter-spacing: 0.1vw; 
+    margin-bottom: 3%;
+  }
+
+  .legenda-titulo {
+    color: var(--Dark-Blue, #1C2736);
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 3vw;
+    line-height: 1.1; 
+    margin: 0; 
+    max-width: none;
+  }
+
+  .legenda-direita {
+    color: var(--cor-letra);
+    text-align: right; 
+    font-family: var(--figtree, sans-serif);
+    font-size: 1.1vw;
+    line-height: 1.6;
+  margin-right: 0;
+  }
+
+  .container-dos-grids {
+    display: flex;
+    gap: 2.5vw;
+    margin-left: 10vw;
+  }
+
+  .grids {
+    width: 25vw; 
+    height: 25vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1vw; 
+  }
+
+  .grid-1 {
+    background-image: url('../assets/images/imagem1.png');
+  }
+
+  .grid-2 {
+    background-image: url('../assets/images/imagem2.svg');
+  }
+
+  .grid-3 {
+    background-image: url('../assets/images/imagem3.svg'); 
+  }
+
+  .titulos {
+  font-family: var(--figtree, sans-serif);
   color: white;
-  border: 1px solid rgb(255, 255, 255); 
-  margin-left: 1vw;
- 
-}
+  margin-top: 65%;
+  margin-left: 3%;
+  font-size: 2vw;
+  font-weight: 700;
+  }
+  
+  .sub-titulos{
+    font-family: var(--figtree, sans-serif);
+    color: white;
+    margin-left: 3%;
+    font-weight: 500;
+    font-size: 1vw;
+    max-width: 20vw;
+    margin-top: 4%;
+  }
 
-.demo:hover {
-  filter: brightness(1.2); 
-  transform: scale(1.05);
-}
+  /* QUINTA SESSAO */
 
-.contato:hover {
-  background-color: rgba(255, 255, 255, 0.667) ; 
-  color: var(--azul-escuro); 
-  border-color: white;
-  transform: scale(1.05);
-}
+  .div-proximo-passo {
+    display: flex;
+    background-color: var(--azul-escuro);
+    margin-top: 5%;
+    width: auto;
+    height: 30vw;
+    flex-direction: column;
+  }
 
+  .titulo1 {
+    font-family: var(--fonte-texto-meio);
+    color: white;
+    font-size: 3vw;
+    margin-top: 40%;
+    margin-left: 30vw;
+    max-width: 50vw;
+  
+  }
+
+  .titulo2 {
+  background: var(--Light-gradient, linear-gradient(90deg, #4084E2 0%, #8ECDDD 100%));
+  font-family: var(--fonte-texto-meio);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3vw;
+  margin-left: 35vw;
+  }
+
+
+  .titulo-linha-unica{
+  margin-top: 10%;
+  }
+
+  .demo {
+  border-radius: 4vw;
+  background: var(--Gradient-blue, linear-gradient(90deg, #132947 0%, #4084E2 100%));
+  color: white  ;
+  font-family: var(--figtree);
+  font-size: 1vw;
+  padding: 1vw 3vw;  
+  border: none;
+  margin-top: 2vw;
+  margin-left: 33vw;
+
+  }
+
+  .contato {
+    border-radius: 4vw;
+    font-size: 1vw;
+    padding: 1vw 3vw;
+    margin-top: 2vw;
+    background-color: var(--azul-escuro);
+    color: white;
+    border: 1px solid rgb(255, 255, 255); 
+    margin-left: 1vw;
+  
+  }
+
+  .demo:hover {
+    filter: brightness(1.2); 
+    transform: scale(1.05);
+  }
+
+  .contato:hover {
+    background-color: rgba(255, 255, 255, 0.667) ; 
+    color: var(--azul-escuro); 
+    border-color: white;
+    transform: scale(1.05);
+  }
 
