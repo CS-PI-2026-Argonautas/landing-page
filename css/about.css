@@ -26,12 +26,12 @@ body{
 
 .high-contrast{
   --background-body-color: #1f0f0f;
-  --first-gradient-color: #074499;
+  --first-gradient-color: #073d8a;
   --second-gradient-color: #478ff3;
   --title-gradient-color: linear-gradient(90deg, var(--first-gradient-color), var(--second-gradient-color));
   --first-text-color: #e4e8ee;
   --second-text-color: #ffffff;
-  --background-card-color: #074499;
+  --background-card-color: var(--first-gradient-color);
 }
 
 .team {
