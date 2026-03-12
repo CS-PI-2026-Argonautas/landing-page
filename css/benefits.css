@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Fugaz+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prosto+One&family=Russo+One&display=swap");
+
+:root { 
+    --fonte-logo: 'Figtree', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #082041;
+    width: 100%;
+}
+.container-planos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+.plano {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  min-height: 400px;
+  border-radius: 15px;
+  border: 1px solid #8ecddd;
+  padding: 40px 30px;
+  justify-content: flex-start; 
+  gap: 20px; 
+  background: linear-gradient(to right, #242F3D, #0F3260);
+  color: aliceblue;
+  font-weight: 800;
+}
+
+.plano .btn {
+  margin-top: auto;
+}
+
+.preco{
+  font-size: 1.5rem;     
+}
+
+.linha {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #8ecddd, transparent);
+  margin: 15px 0;
+}
+
+.titulo {
+  color: white;
+  font-size: 2rem;        
+  letter-spacing: 2px;    
+  text-transform: uppercase; 
+  font-weight: 700;
+}
+
+.secao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  min-height: 100vh;
+  background-color: #051224;
+  font-family: var(--fonte-logo);
+}
+
+.btn-continue{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 180px;
+  min-height: 30px;
+  font-weight: 700;
+}
+
+.btn{
+  background:#8ECDDD;
+  border: 1px solid #8ECDDD;
+  color: #2e4057;
+  border-radius: 15px;
+  width: 180px;
+  min-height: 30px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background:#242F3D;
+  color: #8ECDDD;
+}
+
+
+@media (max-width: 900px) {
+  .container-planos{
+    gap:20px;
+  }
+
+  .plano{
+    width: 220px;
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 600px) {
+
+  .container-planos{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plano{
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .titulo{
+    font-size: 1.6rem;
+  }
+
+}

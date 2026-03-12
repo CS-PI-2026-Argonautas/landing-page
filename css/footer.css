@@ -1,0 +1,54 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.footer {
+  background: linear-gradient(90deg, #1c2736, #23344d);
+  color: white;
+  width: 100%;
+  padding: 16px 0;
+  font-family: "Figtree", sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 8px; 
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row; 
+  gap: 15px;
+}
+
+.footer-section h3 {
+  font-size: 14px;
+}
+
+.footer-section a {
+  color: #dcdcdc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.footer-copy {
+  font-size: 14px;
+  opacity: 0.8;
+}
