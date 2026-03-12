@@ -132,13 +132,13 @@ body{
 }
 
 .name{
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   margin: auto 0;
   width: fit-content;
 }
 
 .assignment{
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   opacity: 95%;
   margin: auto 0;
   width: fit-content;
@@ -151,15 +151,19 @@ body{
   justify-content: space-between;
 }
 .description{
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   width: fit-content;
 }
 
 .contacts{
   margin-top: 15px;
   width: fit-content;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
+.contacts a{
+  text-decoration: underline;
+}
 
 .avatar{
   width: 60%;
