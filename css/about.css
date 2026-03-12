@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root{
+  --background-body-color: #ffffff;
+  --first-gradient-color: #132947;
+  --second-gradient-color: #4084E2;
+  --title-gradient-color: linear-gradient(90deg, var(--first-gradient-color), var(--second-gradient-color));
+  --first-text-color: #3A4A5C;
+  --second-text-color: #ffffff;
+  --background-card-color: #346AB4;
+}
+
 *, *::before, *::after{
   margin: 0;
   padding: 0;
@@ -11,6 +21,17 @@ body{
   font-family: 'Figtree', sans-serif;
   line-height: 1.5;
   min-height: 100vh;
+  background-color: var(--background-body-color);
+}
+
+.high-contrast{
+  --background-body-color: #1f0f0f;
+  --first-gradient-color: #074499;
+  --second-gradient-color: #478ff3;
+  --title-gradient-color: linear-gradient(90deg, var(--first-gradient-color), var(--second-gradient-color));
+  --first-text-color: #e4e8ee;
+  --second-text-color: #ffffff;
+  --background-card-color: #074499;
 }
 
 .team {
@@ -24,9 +45,16 @@ body{
   margin-bottom: 30px;
 }
 
+.team-top-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .team h1:hover{
   /* no style.css estava deixando o conteúdo "NOSSA EQUIPE" na cor branca ao passar o mouse por cima. aqui eu mantenho a mesma cor que já é caso o style.css não seja alterado */
-  background: linear-gradient(90deg, #132947, #4084E2);
+  background: var(--title-gradient-color);
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
@@ -37,14 +65,25 @@ body{
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 400;
   width: fit-content;
-  background: linear-gradient(90deg, #132947, #4084E2);
+  background: var(--title-gradient-color);
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
 }
 
+.theme-change-button{
+  font-family: 'Figtree', sans-serif;
+  font-size: 1rem;
+  color: var(--second-text-color);
+  background-color: var(--background-card-color);
+  padding: 5px;
+  margin: 5px;
+  border: 0;
+  border-radius: 6px;
+}
+
 .team-header p{
-  color: #3A4A5C;
+  color: var(--first-text-color);
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   line-height: 1.6;
   max-width: 700px;
@@ -87,8 +126,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #346AB4;
-  color: #ffffff;
+  background-color: var(--background-card-color);
+  color: var(--second-text-color);
   border-radius: 12px;
 }
 
