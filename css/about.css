@@ -122,10 +122,10 @@ body{
 }
 
 .team-card{
+  height: 490px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   background-color: var(--background-card-color);
   color: var(--second-text-color);
   border-radius: 12px;
@@ -145,20 +145,24 @@ body{
 }
 
 .member-content{
+  height: 185px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 15px;
 }
+
 .description{
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   width: fit-content;
+  max-width: 100%;
 }
 
 .contacts{
-  margin-top: 15px;
-  width: fit-content;
   font-size: clamp(0.9rem, 2.5vw, 1rem);
+  width: fit-content;
+  max-width: 100%;
 }
 
 .contacts a{
