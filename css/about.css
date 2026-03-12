@@ -26,7 +26,7 @@ body{
 
 .high-contrast{
   --background-body-color: #1f0f0f;
-  --first-gradient-color: #073d8a;
+  --first-gradient-color: #042b61;
   --second-gradient-color: #478ff3;
   --title-gradient-color: linear-gradient(90deg, var(--first-gradient-color), var(--second-gradient-color));
   --first-text-color: #e4e8ee;
@@ -131,6 +131,17 @@ body{
   border-radius: 12px;
 }
 
+.avatar{
+  width: 60%;
+  max-width: 180px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 3px solid var(--background-body-color);
+}
+
 .name{
   font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   margin: auto 0;
@@ -168,18 +179,6 @@ body{
 .contacts a{
   text-decoration: underline;
 }
-
-.avatar{
-  width: 60%;
-  max-width: 180px;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px auto;
-}
-
-
 
 
 
