@@ -20,7 +20,7 @@ a {
 .logo {
   margin-left: 15%;
   margin-top: 1%;
-  font-size: 50px;
+  font-size: 3vw;
   line-height: normal;
   color: var(--cor-texto);
   font-family: var(--fonte-logo);
@@ -35,12 +35,12 @@ a {
 .topbarLogo {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 1vw;
   margin-right: auto;
 }
 
 .topbarLinks {
-  font-size: 25px;
+  font-size: 1.5vw;
   font-weight: 600;
   margin-right: 10%;
   display: flex;
