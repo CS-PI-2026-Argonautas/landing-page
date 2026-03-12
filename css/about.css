@@ -122,12 +122,15 @@ body{
 }
 
 
-.footbar{
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  background-color: #1c2736;
-}
+
+
+
+/* .footbar{ */
+  /* display: flex; */
+  /* align-items: center; */
+  /* color: #ffffff; */
+  /* background-color: #1c2736; */
+/* } */
 
 /* @media(max-width: 768px){ */
   /* .team-grid { */
