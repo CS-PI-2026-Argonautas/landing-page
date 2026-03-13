@@ -5,10 +5,14 @@
   --fonte-logo: "Figtree", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 a {
@@ -17,33 +21,61 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  margin-left: 15%;
-  margin-top: 1%;
-  font-size: 3vw;
-  line-height: normal;
-  color: var(--cor-texto);
-  font-family: var(--fonte-logo);
-}
-
 .topbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #1c2736;
+  padding: 10px 20px;
+  width: 100%;
 }
 
 .topbarLogo {
   display: flex;
   flex-direction: column;
-  padding: 1vw;
-  margin-right: auto;
+}
+
+.logo {
+  font-size: 28px;
+  color: var(--cor-texto);
+  font-family: var(--fonte-logo);
+  font-weight: 700;
 }
 
 .topbarLinks {
-  font-size: 1.5vw;
+  font-size: 16px;
   font-weight: 600;
-  margin-right: 10%;
   display: flex;
-  column-gap: 10%;
-  margin-bottom: 2%;
+  gap: 30px;
+}
+
+.topbarLinks a {
+  transition: 0.2s;
+}
+
+.topbarLinks a:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .topbarLinks {
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
 }
