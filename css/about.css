@@ -25,7 +25,7 @@ body{
 }
 
 .high-contrast{
-  --background-body-color: #1f0f0f;
+  --background-body-color: #060303;
   --first-gradient-color: #042b61;
   --second-gradient-color: #478ff3;
   --title-gradient-color: linear-gradient(90deg, var(--first-gradient-color), var(--second-gradient-color));
@@ -129,6 +129,10 @@ body{
   background-color: var(--background-card-color);
   color: var(--second-text-color);
   border-radius: 12px;
+}
+
+.team-card h1:hover{
+  color: var(--second-text-color);
 }
 
 .avatar{
