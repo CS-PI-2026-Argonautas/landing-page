@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Fugaz+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prosto+One&family=Russo+One&display=swap");
+@import url("style.css");
 
 :root { 
     --fonte-logo: 'Figtree', sans-serif;
+    --off-white:#F8F8F8;
 }
 * {
     margin: 0;
@@ -9,7 +11,7 @@
     box-sizing: border-box;
 }
 body {
-      background-color: #051224;
+    background-color: var(--fundo);
     width: 100%;
 }
 .container-planos {
@@ -51,7 +53,7 @@ body {
 }
 
 .titulo {
-  color: white;
+  color: var(--fonte);
   font-size: 2rem;        
   letter-spacing: 2px;    
   text-transform: uppercase; 
@@ -65,7 +67,6 @@ body {
   justify-content: center;
   gap: 50px;
   min-height: 100vh;
-  background-color: #051224;
   font-family: var(--fonte-logo);
 }
 
@@ -121,4 +122,45 @@ body {
     font-size: 1.6rem;
   }
 
+}
+#switch {
+  position: relative;
+  width: 64px;
+
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--fundo) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+
+.light #switch button {
+  animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--hover);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(gray);
+  border: 1px solid var(rgb(59, 59, 59));
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }

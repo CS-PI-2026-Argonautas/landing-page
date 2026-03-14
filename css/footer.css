@@ -9,7 +9,7 @@ body{
 }
 
 .footer {
-  background: linear-gradient(90deg, #1c2736, #23344d);
+  background: linear-gradient(to right, #242F3D, #0F3260);
   color: white;
   width: 100%;
   padding: 30px 0;

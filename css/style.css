@@ -3,16 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --fundo: #F8F8F8;
+  --fonte: #051224;
+  --hover: white;
+
+}
+
+.dark{
+  --fundo: #051224;
+  --fonte: #F8F8F8;
+  --hover: grey;
+}
 
 body {
   font-family: "Figtree", sans-serif;
+  background-color: var(--fundo) ;
 }
 
 .topbar {
   display: flex;
   align-items: center;
-  color: #ffffff;
-  background-color: #1c2736;
+  color: var(--fonte);
+  background-color: var(--fundo);
 }
 
 header {
@@ -20,16 +33,13 @@ header {
   text-decoration: none;
 }
 
-footer {
-  background-color: var(--dark-blue);
-}
 
 header a:hover {
   color: var(--dark-blue);
 }
 
 header a {
-  color: var(--white);
+  color: var(--fonte);
   margin: 5%;
   text-decoration: none;
   font-size: large;
@@ -105,7 +115,7 @@ header a {
 }
 
 header h1:hover {
-  color: white;
+  color: var(--hover);
 }
 
 .iframe-navbar {

@@ -25,7 +25,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1c2736;
+  background: linear-gradient(to right, #242F3D, #0F3260);
   padding: 10px 20px;
   width: 100%;
 }
