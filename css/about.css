@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+
 :root{
   --background-body-color: #ffffff;
   --first-gradient-color: #132947;
@@ -9,6 +10,7 @@
   --first-text-color: #3A4A5C;
   --second-text-color: #ffffff;
   --background-card-color: #346AB4;
+  --font-figtree: 'Figtree', sans-serif;
 }
 
 *, *::before, *::after{
@@ -18,23 +20,24 @@
 }
 
 body{
-  font-family: 'Figtree', sans-serif;
+  font-family: var(--font-figtree);
   line-height: 1.5;
   min-height: 100vh;
   background-color: var(--background-body-color);
 }
 
 .high-contrast{
-  --background-body-color: #1f0f0f;
-  --first-gradient-color: #042b61;
-  --second-gradient-color: #478ff3;
-  --title-gradient-color: linear-gradient(90deg, var(--first-gradient-color), var(--second-gradient-color));
+  --background-body-color: #051224;
+  /* --first-gradient-color: #042b61; */
+  /* --second-gradient-color: #478ff3; */
+  --title-gradient-color: #f8f8f8;
   --first-text-color: #e4e8ee;
   --second-text-color: #ffffff;
-  --background-card-color: var(--first-gradient-color);
+  --background-card-color: #051f43;
 }
 
 .team {
+  font-family: var(--font-figtree);
   max-width: 1280px;
   padding: 0 20px;
   margin: 40px auto;
@@ -131,6 +134,10 @@ body{
   border-radius: 12px;
 }
 
+.team-card h1:hover{
+  color: var(--second-text-color);
+}
+
 .avatar{
   width: 60%;
   max-width: 180px;
@@ -172,8 +179,10 @@ body{
 
 .contacts{
   font-size: clamp(0.9rem, 2.5vw, 1rem);
-  width: fit-content;
+  /* width: fit-content; */
   max-width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts a{
