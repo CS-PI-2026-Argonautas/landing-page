@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root{
+  --background-body-color: #ffffff;
+  --first-gradient-color: #132947;
+  --second-gradient-color: #4084E2;
+  --title-gradient-color: linear-gradient(90deg, var(--first-gradient-color), var(--second-gradient-color));
+  --first-text-color: #3A4A5C;
+  --second-text-color: #ffffff;
+  --background-card-color: #346AB4;
+  --font-figtree: 'Figtree', sans-serif;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-figtree);
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: var(--background-body-color);
+}
+
+.high-contrast{
+  --background-body-color: #051224;
+  /* --first-gradient-color: #042b61; */
+  /* --second-gradient-color: #478ff3; */
+  --title-gradient-color: #f8f8f8;
+  --first-text-color: #e4e8ee;
+  --second-text-color: #ffffff;
+  --background-card-color: #051f43;
+}
+
+.team {
+  font-family: var(--font-figtree);
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 40px auto;
+}
+
+.team-header{
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.team-top-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team h1:hover{
+  /* no style.css estava deixando o conteúdo "NOSSA EQUIPE" na cor branca ao passar o mouse por cima. aqui eu mantenho a mesma cor que já é caso o style.css não seja alterado */
+  background: var(--title-gradient-color);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.team-header h1{
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 400;
+  width: fit-content;
+  background: var(--title-gradient-color);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.theme-change-button{
+  font-family: 'Figtree', sans-serif;
+  font-size: 1rem;
+  color: var(--second-text-color);
+  background-color: var(--background-card-color);
+  padding: 5px;
+  margin: 5px;
+  border: 0;
+  border-radius: 6px;
+}
+
+.team-header p{
+  color: var(--first-text-color);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 1.6;
+  max-width: 700px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.team-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+@media (max-width: 1024px) {
+  .team {
+    padding: 0 15px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team {
+    padding: 0 10px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.team-card{
+  height: 490px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-card-color);
+  color: var(--second-text-color);
+  border-radius: 12px;
+}
+
+.team-card h1:hover{
+  color: var(--second-text-color);
+}
+
+.avatar{
+  width: 60%;
+  max-width: 180px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 3px solid var(--background-body-color);
+}
+
+.name{
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  margin: auto 0;
+  width: fit-content;
+}
+
+.assignment{
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  opacity: 95%;
+  margin: auto 0;
+  width: fit-content;
+}
+
+.member-content{
+  height: 185px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.description{
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.contacts{
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  /* width: fit-content; */
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts a{
+  text-decoration: underline;
+}
+
+
+
+/* .footbar{ */
+  /* display: flex; */
+  /* align-items: center; */
+  /* color: #ffffff; */
+  /* background-color: #1c2736; */
+/* } */
+
+/* @media(max-width: 768px){ */
+  /* .team-grid { */
+    /* grid-template-columns: repeat(1, minmax(250px, 1fr)); */
+  /* } */
+/* } */
+
+
+
+
+/* ================ */
+
+
+
+/* .topbar{
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #1c2736;
+}
+
+.topbarLogo{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: auto;
+}
+
+.topbarLinks{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  padding: 10px;
+  column-gap: 10px;
+} */
+
+
+/* ================== */
+
+
+
+
+/* @import url("style.css");
+@import url("grid.css");
+
+main {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.header_titulo {
+  display: flex;
+}
+.titulo_estilizacao {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 5rem;
+  margin-left: 35rem;
+  margin-bottom: 0;
+}
+.titulo2_estilizacao {
+  margin-top: 0;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 5rem;
+  margin-left: 40rem;
+}
+
+.informacoes {
+  max-width: 40rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  margin-left: 20rem;
+  margin-top: 0.2rem;
+}
+
+.imagem_equipe {
+  position: flex;
+  width: 400px;
+  height: 350px;
+  border-radius: 8px;
+}
+
+.header_informacao {
+  display: flex;
+  gap: 5rem;
+} */

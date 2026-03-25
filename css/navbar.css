@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Fugaz+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prosto+One&family=Russo+One&display=swap");
+
+:root {
+  --cor-texto: #ffffff;
+  --fonte-logo: "Figtree", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--cor-texto);
+  font-family: var(--fonte-logo);
+  text-decoration: none;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c2736;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.topbarLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 28px;
+  color: var(--cor-texto);
+  font-family: var(--fonte-logo);
+  font-weight: 700;
+}
+
+.topbarLinks {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 30px;
+}
+
+.topbarLinks a {
+  transition: 0.2s;
+}
+
+.topbarLinks a:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .topbarLinks {
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+}
